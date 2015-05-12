@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+Copyright 2015
+ http://wazza.co.ke
+5:07:13 PM  : May 9, 2015
+-->
+<html>
+    <head>
+        <title></title>
+        <link href="../styler/menu.css" rel="stylesheet" type="text/css"/>
+        <script src = "js/menu.js"></script>
+    </head>
+    <body>
+        <div class="menu-bar">
+            <div class="menu-item" id="mn-item-manuscripts" onmouseover="highlight(this);" onmouseout="reset(this);">
+                <a href="mlist.sx">
+                    <img src="resc/icons/menu-icons/active/ico_manuscripts.png" id="ic-manuscript" alt="icon-mns"/>
+                    <span>Manuscripts</span>
+                </a>
+            </div>
+            <div class="menu-item" id="mn-item-authors" onmouseover="highlight(this);" onmouseout="reset(this);" onclick="select(this);">
+                <a href="main.sx">
+                    <img src="resc/icons/menu-icons/active/ico_authors.png" id="ic-author" alt="icon-aut"/>
+                    <span>Authors</span>
+                </a>
+            </div>
+            <div class="menu-item" id="mn-item-reviewers" onmouseover="highlight(this);" onmouseout="reset(this);" onclick="select(this);">
+                <a href="authors.jsp">
+                    <img src="resc/icons/menu-icons/active/ico_reviewers.png" id="ic-reviewer" alt="icon-rev"/>
+                    <span>Reviewers</span>
+                </a>
+            </div>
+            <div class="menu-item" id="mn-item-journals" onmouseover="highlight(this);" onmouseout="reset(this);" onclick="select(this);">
+                <a href="authors.jsp">
+                    <img src="resc/icons/menu-icons/active/ico_journals.png" id="ic-journal" alt="icon-jrn"/>
+                    <span>Journals</span>
+                </a>
+            </div>
+        </div>
+    </body>
+
+</html>

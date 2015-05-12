@@ -1,0 +1,352 @@
+
+/* 
+    Created on : Feb 10, 2015, 11:25:10 PM
+    Author     : kelli
+*/
+@import "menu.css";
+@font-face{
+    font: 'Roboto';
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+/**================================Common UI elements CSS section===========================*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+p{
+    font-family: sans-serif;
+    font-size: smaller;
+    color: cadetblue;
+}
+
+body{
+    margin-left:  100px;
+    margin-right: 100px;
+    background: #ffffff;
+    font-size: small;
+    font-family: 'Roboto', sans-serif;
+}
+
+.text_box{
+    border: solid #00cccc;
+    border-width: 2px; 
+    border-radius: 3px; 
+    width: 215px;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.btn{
+    border:solid #00cccc;
+    border-radius: 5px; 
+    background: #00cccc;
+    padding:5px;
+    color: #ffffff;
+    width: 150px;
+    text-align: center;
+    width: 25%;
+    margin-left: 210px;
+}
+
+.nav-bar{
+    background: #9999ff;
+    width:available;
+    height: 60px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: medium;
+    color: #ffffff;
+    padding-top: 10px;
+    padding-left: 3%;
+    /*margin-left: 10px;*/
+}
+    /**Generated results container for all results fetched....*/
+    .output-section{
+    width: 70%;
+    margin-left: 10px;
+    height: 30px;
+    clear: both;
+    background:#006666;
+    
+}
+
+/**=========================================Results Tables CSS section===========================*/
+
+table{
+    color: #003333;
+    padding: 5px 5px;
+    float: left;
+    width:82%; 
+    position: relative;
+    margin-top:-80px;
+    margin-left: 20px;
+    border-collapse: collapse;
+}
+
+table th, td{
+    border-bottom: dotted #cccccc thin;    
+    border-top: dotted #cccccc thin;    
+    padding: 1px 5px;
+    border-collapse: collapse;
+}
+
+.author-menu-bar{
+    margin-top:20px;
+    float: left;
+    width: 20%;
+    height: 20px;
+    border: solid #cccccc thin;
+    margin-left:20px;
+    padding: 5px;
+}
+
+.author-menu-item{
+    background: #ccccff;
+    padding: 3px;
+    text-align: center;
+    display: inline;
+}
+
+.author-menu-item a{
+    text-decoration: none;
+}
+
+/** js activated divs*/
+#author-success-popup{
+    position: absolute;
+    width:250px;
+    height:30px;
+    left: 500px;
+    padding: 3px;
+    font-weight: bold;
+    color:#ffffff;
+    background: #006666;
+    border-bottom-left-radius:   3px;
+    border-bottom-right-radius:   3px;
+    text-align: center;
+    display: none;
+}
+
+.author_txfield {
+    border: solid thin #cccccc; 
+    /*border-radius: 3px;*/ 
+    padding: 3px;
+    width: 100px;
+    margin-bottom: 10px;
+    margin-left:10px;
+}
+
+/**=========================================Login CSS section================================*/
+.login_panel{
+    margin-top:100px;
+    border: solid thin darkgrey; 
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right:auto;
+    width: 230px;
+    padding: 5px;
+}
+
+.title_bar{
+    border-bottom: solid darkgray thick;
+    margin-bottom: 10px;
+    padding: 4px;
+    text-align: center;
+    font-weight:bold;
+    color: #003333;
+    background: darkgray;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.login-menu{
+    width: 100%;
+    text-decoration: none;
+    margin-right:  5px;
+    font-size: small;
+    text-align: right;
+    /*border-bottom: #cccccc solid thin;*/
+    background:#999999;
+}
+
+.menu-img{
+    width: 30px;
+    height: 25px;
+    padding: 5px;
+    float: left;
+    background: #99ccff;
+    border-radius: 3px;
+    margin-top: 2px;
+    margin-bottom:  2px;    
+}
+
+.menu-text{
+    margin-top: 1px;
+    margin-bottom:  1px;
+    float: left;
+    border-radius: 3px;
+    font-weight: 500;
+    width: 100px;
+    height: 25px;
+}
+
+/*.table-navigation{
+    width:200px;    
+    height:30px;
+    border:solid thin #9999ff;
+}*/
+
+#spacer{
+    margin: 4px;
+    padding: 2px;
+}
+
+/**
+New authors form
+*/
+.form-layout{
+    margin-top:20px;
+    margin-left:20px;
+    border:solid #9999ff thin;
+    border-radius: 3px;
+    float:left;
+    width:600px;
+    color: #003333;
+    padding:15px;
+}
+
+.form-layout label, .form-layout input{
+    display: block;
+    float:left;
+    margin-bottom:10px;
+}
+
+.form-layout label{
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 120px;
+    float: left;
+}
+
+.form-layout input{
+    width: 200px;
+    text-align: left;
+}
+
+br{
+    clear: left;
+}
+
+/**==================================Search bar section=========================================*/
+.search-bar{
+    width:100%;
+    height: 20px;
+    font-family: sans-serif;
+    font-size: small;
+}
+
+.search-input{
+    width: 30%;
+    padding: 3px;
+    margin-left: 63%;
+    border: thin #999999 solid;
+}
+
+.search-btn{
+    height: 25px;
+    float:right;
+    background: #00cccc;
+    border:solid #00cccc thin;
+    border-radius: 3px; 
+}
+/**=====================================================manuscript css  section ==============*/
+/*.manuscripts-table{
+    color: #003333;
+    float: right;
+    border-collapse: collapse;
+}*/
+
+/*.manuscripts-table th, td{
+    border-bottom: dotted #cccccc thin;    
+    border-top: dotted #cccccc thin;    
+    padding: 1px 5px;
+}*/
+
+.manuscripts-menu-bar{
+    margin-top:20px;
+    float: left;
+    width: 80%;
+    height: 20px;
+    border: solid #cccccc thin;
+    margin-left:20px;
+    padding:5px 9px;
+}
+
+.manuscripts-filter-panel{
+    margin-top:20px;
+    padding: 5px;
+    width: 15%;
+    border: thin solid #cccccc; 
+    display: block;
+    clear: left;
+    display: block;
+    float: left;
+}
+
+.manuscripts-filter-panel h3{
+    background: #cccccc;
+    font-weight: 500;
+    font-size: small;
+    margin-bottom: 15px;
+    padding: 5px;
+}
+
+.manuscripts-filter-panel input{
+    width: 95%;
+    border: solid #999999 thin;
+    height:25px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.manuscripts-filter-panel select{
+    padding-bottom: 4px;
+    border:solid thin #999999;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+/**=================================================Pagination Bar CSS======== ==============*/
+.pagination-panel{
+    display:block;
+    width: 50%;
+    float: right;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right: 0px;
+    background: #cccccc;
+    text-align: right;
+    /*color: #999999;*/
+}
+
+.pagination-panel span{
+    color: #666666;
+    float: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    font-size: 120%;
+}
+
+.pagination-panel img{
+    width:28px ;
+    height: 28px;
+    border: solid #006666 thin;
+    padding-right: 5px;
+    padding-left: 5px;
+    /*text-align: right;*/
+
+}
+
